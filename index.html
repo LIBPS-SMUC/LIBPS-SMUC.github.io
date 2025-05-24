@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIB Provisional Studio's Congress - Coming Soon</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: #0a192f;
+            color: #64ffda;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            background-image: linear-gradient(
+                to bottom right,
+                rgba(10, 25, 47, 0.9),
+                rgba(10, 25, 47, 0.7)
+            );
+            animation: gradientShift 20s ease infinite;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .logo {
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #64ffda;
+            border-bottom: 2px solid #64ffda;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            letter-spacing: 2px;
+            animation: fadeIn 1.5s ease-in;
+        }
+
+        .announcement {
+            font-size: 1.8rem;
+            margin: 2rem 0;
+            color: #ccd6f6;
+            max-width: 800px;
+            line-height: 1.6;
+        }
+
+        .highlight {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: rgba(100, 255, 218, 0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+        }
+
+        .icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(100, 255, 218, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact {
+            margin-top: 3rem;
+            color: #8892b0;
+        }
+
+        a {
+            color: #64ffda;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        a:hover {
+            opacity: 0.8;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            .announcement { font-size: 1.2rem; }
+            .highlight { flex-direction: column; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo"><a href="github.com/LIBPS">LIB Provisional Studio</a></div>
+    
+    <h1>Members & Users Congress</h1>
+    
+    <div class="highlight">
+        <div class="icon">🎯</div>
+        <div>
+            <p class="announcement">
+                We are working hard to prepare this Page ......<br>
+                COMING SOON
+            </p>
+        </div>
+    </div>
+
+    <div class="contact">
+        <p>Stay connected with us:</p>
+        <p>
+            🌐 <a href="http://www.libps.xin" target="_blank">www.libps.xin</a> | 
+            📧 <a href="mailto:SMUC@libps.xin">SMUC@libps.xin</a>
+        </p>
+        <p style="margin-top: 1rem; font-size: 0.9em;">Follow us for real-time updates</p>
+    </div>
+</body>
+</html>
